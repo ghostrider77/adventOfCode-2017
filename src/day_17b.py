@@ -1,11 +1,6 @@
 from collections import deque
 
 
-def read_input_data(filename):
-    with open(filename, "r") as f:
-        return f.read().splitlines()
-
-
 def get_spinlock_value(step_size, nr_rounds):
     buffer = deque([0])
     for n in range(1, nr_rounds+1):
